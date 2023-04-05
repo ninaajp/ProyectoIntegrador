@@ -6,4 +6,6 @@ let indexController = require('../controllers/indexController');
 router.get('/home', indexController.home);
 router.get('/busqueda', indexController.busqueda);
 
+//aca va solo la barra????
+
 module.exports = router;

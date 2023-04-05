@@ -1,8 +1,6 @@
 
 
 
-
-
 const usersController = {
     login: function(req, res) {
         res.render('login');
@@ -15,7 +13,7 @@ const usersController = {
       },
     profileEdit: function(req, res) {
         res.render('profileEdit');
-      },
+      }
 };
 
 module.exports = usersController;
