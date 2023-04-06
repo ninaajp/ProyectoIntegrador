@@ -1,5 +1,9 @@
 const data = {
-    usuarios: {},
+    usuarios: {
+        nombre: 'nina',
+        email: 'ninasoljp@gmail.com',
+        foto: '/images/users/default-image.png'
+    },
     productos: [
         {}
     ],
@@ -8,3 +12,4 @@ const data = {
     ]
 
 }
+module.exports = data;

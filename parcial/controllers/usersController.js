@@ -1,5 +1,5 @@
 
-
+const data = require('../data/index');
 
 const usersController = {
     login: function(req, res) {
@@ -9,7 +9,8 @@ const usersController = {
         res.render('register');
       },
     profile: function(req, res) {
-        res.render('profile');
+      console.log(data.usuarios);
+        res.render('profile', {data: data.usuarios});
       },
     profileEdit: function(req, res) {
         res.render('profileEdit');

@@ -5,7 +5,7 @@ const indexController = {
         res.render('index');
       },
     busqueda: function(req, res) {
-      res.render('resultadoBusqueda');
+      res.render('busqueda');
     }
 };
 
