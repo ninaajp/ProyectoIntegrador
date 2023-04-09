@@ -12,6 +12,13 @@ const comentarios = [
         fecha_de_carga: '07-04-2023',
         id_usuario: 1,
         id_publicacion: 1
+    },
+    {
+        id: 3,
+        texto: 'Buena casaca',
+        fecha_de_carga: '07-04-2023',
+        id_usuario: 2,
+        id_publicacion: 2
     }
 ]
 
