@@ -1,6 +1,5 @@
 const camisetas_de_futbol = require('../data/camisetas_de_futbol')
-const usuarios = require('../data/usuarios')
-const comentarios = require('../data/comentarios')
+
 
 const productosController = {
   product: function (req, res) {
