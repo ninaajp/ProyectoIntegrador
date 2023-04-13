@@ -7,7 +7,7 @@ const indexController = {
         res.render('index', {camisetas_de_futbol: camisetas_de_futbol});
       },
     busqueda: function(req, res) {
-      res.render('busqueda');
+      res.render('busqueda', {camisetas_de_futbol: camisetas_de_futbol});
     }
 };
 
