@@ -4,7 +4,7 @@ const camisetas_de_futbol = [
         nombre: 'Camiseta Argentina',
         imagen: '/images/products/camisetaArg.png',
         descripcion: 'Camiseta de Boca Juniors para adulto talle L',
-        fecha_de_carga: 'DD-MM-AAAA',
+        fecha_de_carga: '07-04-2023',
         vendedor: {
             id: 1,
             nombre: 'Nina',
@@ -13,7 +13,7 @@ const camisetas_de_futbol = [
             dni: '43321297',
             fecha_de_nacimiento: '2000-01-01',
             contrasenia: '123456',
-            fecha_de_carga: '07-04-2023',
+            fecha_de_carga: '07-04-2023'
         },
         comentarios: [
             {
@@ -27,7 +27,7 @@ const camisetas_de_futbol = [
                     foto: '/images/users/default-image.png',
                     dni: '43321297',
                     fecha_de_nacimiento: '2000-01-01',
-                    fecha_de_carga: '07-04-2023',
+                    fecha_de_carga: '07-04-2023'
                 }
             },
             {
@@ -41,7 +41,7 @@ const camisetas_de_futbol = [
                     foto: '/images/users/default-image.png',
                     dni: '44447666',
                     fecha_de_nacimiento: '27-08-2002',
-                    fecha_de_carga: '07-04-2023',
+                    fecha_de_carga: '07-04-2023'
                 }
             }
         ]
@@ -51,7 +51,7 @@ const camisetas_de_futbol = [
         nombre: 'Camiseta de Racing',
         imagen: '/images/products/camisetaRacing.jpeg',
         descripcion: 'Camiseta de Racing para adulto talle L',
-        fecha_de_carga: 'DD-MM-AAAA',
+        fecha_de_carga: '07-04-2023',
         vendedor: {
             id: 2,
             nombre: 'santi',
@@ -59,9 +59,8 @@ const camisetas_de_futbol = [
             foto: '/images/users/default-image.png',
             dni: '44447666',
             fecha_de_nacimiento: '27-08-2002',
-            fecha_de_carga: '07-04-2023',
-            ids_publicaciones: [2],
-            ids_comentarios: []
+            contrasenia: '123456',
+            fecha_de_carga: '07-04-2023'
         },
         comentarios: [
 
@@ -72,7 +71,7 @@ const camisetas_de_futbol = [
         nombre: 'Camiseta de Atletico',
         imagen: '/images/products/camisetaAtletico.jpeg',
         descripcion: 'Camiseta de Atletico para adulto talle L',
-        fecha_de_carga: 'DD-MM-AAAA',
+        fecha_de_carga: '07-04-2023',
         vendedor: {
             id: 2,
             nombre: 'santi',
@@ -80,9 +79,8 @@ const camisetas_de_futbol = [
             foto: '/images/users/default-image.png',
             dni: '44447666',
             fecha_de_nacimiento: '27-08-2002',
-            fecha_de_carga: '07-04-2023',
-            ids_publicaciones: [2],
-            ids_comentarios: []
+            contrasenia: '123456',
+            fecha_de_carga: '07-04-2023'
         },
         comentarios: [
             {
@@ -96,7 +94,7 @@ const camisetas_de_futbol = [
                     foto: '/images/users/default-image.png',
                     dni: '50000001',
                     fecha_de_nacimiento: '30-11-2003',
-                    fecha_de_carga: '07-04-2023',
+                    fecha_de_carga: '07-04-2023'
                 },
             }
         ]
@@ -106,7 +104,7 @@ const camisetas_de_futbol = [
         nombre: 'Camiseta de Elche',
         imagen: '/images/products/camisetaElche.jpeg',
         descripcion: 'Camiseta de Barcelona para adulto talle L',
-        fecha_de_carga: 'DD-MM-AAAA',
+        fecha_de_carga: '07-04-2023',
         vendedor: {
             id: 4,
             nombre: 'Sofia',
@@ -114,7 +112,8 @@ const camisetas_de_futbol = [
             foto: '/images/users/default-image.png',
             dni: '50000001',
             fecha_de_nacimiento: '30-11-2003',
-            fecha_de_carga: '07-04-2023',
+            contrasenia: '123456',
+            fecha_de_carga: '07-04-2023'
         },
         comentarios: [
 
@@ -125,7 +124,7 @@ const camisetas_de_futbol = [
         nombre: 'Camiseta del PSG',
         imagen: '/images/products/camisetaPsg.png',
         descripcion: 'Camiseta de PSG para adulto talle L',
-        fecha_de_carga: 'DD-MM-AAAA',
+        fecha_de_carga: '07-04-2023',
         vendedor: {
             id: 4,
             nombre: 'Sofia',
@@ -133,7 +132,8 @@ const camisetas_de_futbol = [
             foto: '/images/users/default-image.png',
             dni: '50000001',
             fecha_de_nacimiento: '30-11-2003',
-            fecha_de_carga: '07-04-2023',
+            contrasenia: '123456',
+            fecha_de_carga: '07-04-2023'
         },
         comentarios: [
 
@@ -144,16 +144,16 @@ const camisetas_de_futbol = [
         nombre: 'Camiseta del Chelsea',
         imagen: '/images/products/camisetaChelsea.jpg',
         descripcion: 'Camiseta de Chelsea para adulto talle L',
-        fecha_de_carga: 'DD-MM-AAAA',
+        fecha_de_carga: '07-04-2023',
         vendedor: {
-            id: 1,
-            nombre: 'Nina',
-            email: 'nina@gmail.com',
+            id: 3,
+            nombre: 'Carolina',
+            email: 'carolin@gmail.com',
             foto: '/images/users/default-image.png',
-            dni: '43321297',
-            fecha_de_nacimiento: '2000-01-01',
-            contrasenia: '123456',
-            fecha_de_carga: '07-04-2023',
+            dni: '42121297',
+            fecha_de_nacimiento: '2004-04-18',
+            contrasenia: '1236',
+            fecha_de_carga: '07-04-2023'
         },
         comentarios: [
 
@@ -164,7 +164,7 @@ const camisetas_de_futbol = [
         nombre: 'Camiseta de Juventus',
         imagen: '/images/products/camisetaJuventus.png',
         descripcion: 'Camiseta de Juventus para adulto talle L',
-        fecha_de_carga: 'DD-MM-AAAA',
+        fecha_de_carga: '07-04-2023',
         vendedor: {
             id: 5,
             nombre: 'Luis',
@@ -173,12 +173,126 @@ const camisetas_de_futbol = [
             dni: '30000001',
             fecha_de_nacimiento: '1999-03-14',
             contrasenia: '1238',
-            fecha_de_carga: '07-04-2023',
+            fecha_de_carga: '07-04-2023'
         },
         comentarios: [
 
         ]
     },
+    {
+        id: 8,
+        nombre: 'Camiseta de Sevilla',
+        imagen: '/images/products/camisetaSevilla.png',
+        descripcion: 'Camiseta de Sevilla para adulto talle L',
+        fecha_de_carga: '07-04-2023',
+        vendedor: {
+            id: 5,
+            nombre: 'Luis',
+            email: 'luis@gmail.com',
+            foto: '/images/users/default-image.png',
+            dni: '30000001',
+            fecha_de_nacimiento: '1999-03-14',
+            contrasenia: '1238',
+            fecha_de_carga: '07-04-2023'
+        },
+        comentarios: [
+            {
+                id: 1,
+                texto: 'Genial',
+                fecha_de_carga: '07-04-2023',
+                usuario: {
+                    id: 3,
+                    nombre: 'Carolina',
+                    email: 'carolin@gmail.com',
+                    foto: '/images/users/default-image.png',
+                    dni: '42121297',
+                    fecha_de_nacimiento: '2004-04-18',
+                    fecha_de_carga: '07-04-2023'
+                }
+            }
+        ]
+    },
+    {
+        id: 9,
+        nombre: 'Camiseta de Portugal',
+        imagen: '/images/products/camisetaPotugal.png',
+        descripcion: 'Camiseta de Portugal para adulto talle L',
+        fecha_de_carga: '07-04-2023',
+        vendedor: {
+            id: 1,
+            nombre: 'Nina',
+            email: 'nina@gmail.com',
+            foto: '/images/users/default-image.png',
+            dni: '43321297',
+            fecha_de_nacimiento: '2000-01-01',
+            contrasenia: '123456',
+            fecha_de_carga: '07-04-2023'
+        },
+        comentarios: [
+            {
+                id: 1,
+                texto: 'Muy buena calidad',
+                fecha_de_carga: '07-04-2023',
+                usuario: {
+                    id: 5,
+                    nombre: 'Luis',
+                    email: 'luis@gmail.com',
+                    foto: '/images/users/default-image.png',
+                    dni: '30000001',
+                    fecha_de_nacimiento: '1999-03-14',
+                    fecha_de_carga: '07-04-2023'
+                }
+            },
+            {
+                id: 2,
+                texto: 'Excelente camiseta',
+                fecha_de_carga: '07-04-2023',
+                usuario: {
+                    id: 4,
+                    nombre: 'Sofia',
+                    email: 'sofia@gmail.com',
+                    foto: '/images/users/default-image.png',
+                    dni: '50000001',
+                    fecha_de_nacimiento: '30-11-2003',
+                    fecha_de_carga: '07-04-2023'
+                }
+            }
+        ]
+    },
+    {
+        id: 10,
+        nombre: 'Camiseta del Porto',
+        imagen: '/images/products/camisetaPorto.png',
+        descripcion: 'Camiseta de Porto para adulto talle L',
+        fecha_de_carga: '07-04-2023',
+        vendedor: {
+            id: 5,
+            nombre: 'Luis',
+            email: 'luis@gmail.com',
+            foto: '/images/users/default-image.png',
+            dni: '30000001',
+            fecha_de_nacimiento: '1999-03-14',
+            contrasenia: '1238',
+            fecha_de_carga: '07-04-2023'
+        },
+        comentarios: [
+            {
+                id: 1,
+                texto: 'Buenisima',
+                fecha_de_carga: '07-04-2023',
+                usuario: {
+                    id: 1,
+                    nombre: 'Nina',
+                    email: 'nina@gmail.com',
+                    foto: '/images/users/default-image.png',
+                    dni: '43321297',
+                    fecha_de_nacimiento: '2000-01-01',
+                    fecha_de_carga: '07-04-2023'
+                }
+            }
+        ]
+    }
+
 ]
 
 module.exports = camisetas_de_futbol;
