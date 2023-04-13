@@ -120,8 +120,65 @@ const camisetas_de_futbol = [
 
         ]
     },
-    
+    {
+        id: 5,
+        nombre: 'Camiseta del PSG',
+        imagen: '/images/products/camisetaPsg.png',
+        descripcion: 'Camiseta de PSG para adulto talle L',
+        fecha_de_carga: 'DD-MM-AAAA',
+        vendedor: {
+            id: 4,
+            nombre: 'Sofia',
+            email: 'sofia@gmail.com',
+            foto: '/images/users/default-image.png',
+            dni: '50000001',
+            fecha_de_nacimiento: '30-11-2003',
+            fecha_de_carga: '07-04-2023',
+        },
+        comentarios: [
 
+        ]
+    },
+    {
+        id: 6,
+        nombre: 'Camiseta del Chelsea',
+        imagen: '/images/products/camisetaChelsea.jpg',
+        descripcion: 'Camiseta de Chelsea para adulto talle L',
+        fecha_de_carga: 'DD-MM-AAAA',
+        vendedor: {
+            id: 1,
+            nombre: 'Nina',
+            email: 'nina@gmail.com',
+            foto: '/images/users/default-image.png',
+            dni: '43321297',
+            fecha_de_nacimiento: '2000-01-01',
+            contrasenia: '123456',
+            fecha_de_carga: '07-04-2023',
+        },
+        comentarios: [
+
+        ]
+    },
+    {
+        id: 7,
+        nombre: 'Camiseta de Juventus',
+        imagen: '/images/products/camisetaJuventus.png',
+        descripcion: 'Camiseta de Juventus para adulto talle L',
+        fecha_de_carga: 'DD-MM-AAAA',
+        vendedor: {
+            id: 5,
+            nombre: 'Luis',
+            email: 'luis@gmail.com',
+            foto: '/images/users/default-image.png',
+            dni: '30000001',
+            fecha_de_nacimiento: '1999-03-14',
+            contrasenia: '1238',
+            fecha_de_carga: '07-04-2023',
+        },
+        comentarios: [
+
+        ]
+    },
 ]
 
 module.exports = camisetas_de_futbol;
