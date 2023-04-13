@@ -45,7 +45,7 @@ const camisetas_de_futbol = [
                 }
             }
         ]
-    }, // HASTA ACÁ ESTÁ BIEN 
+    }, 
     {
         id: 2,
         nombre: 'Camiseta de Racing',
