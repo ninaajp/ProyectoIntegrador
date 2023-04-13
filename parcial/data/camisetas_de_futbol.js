@@ -120,6 +120,8 @@ const camisetas_de_futbol = [
 
         ]
     },
+    
+
 ]
 
 module.exports = camisetas_de_futbol;
