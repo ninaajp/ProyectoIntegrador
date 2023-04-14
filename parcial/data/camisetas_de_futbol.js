@@ -63,7 +63,20 @@ const camisetas_de_futbol = [
             fecha_de_carga: '07-04-2023'
         },
         comentarios: [
-
+            {
+                id: 5,
+                texto: 'Vamos Racing!',
+                fecha_de_carga: '07-04-2023',
+                usuario: {
+                    id: 1,
+                    nombre: 'Nina',
+                    email: 'nina@gmail.com',
+                    foto: '/images/users/default-image.png',
+                    dni: '43321297',
+                    fecha_de_nacimiento: '2000-01-01',
+                    fecha_de_carga: '07-04-2023'
+                }
+            }
         ]
     },   
     {
@@ -116,7 +129,20 @@ const camisetas_de_futbol = [
             fecha_de_carga: '07-04-2023'
         },
         comentarios: [
-
+            {
+                id: 8,
+                texto: 'Aupa Elche, que linda camsieta',
+                fecha_de_carga: '07-04-2023',
+                usuario: {
+                    id: 1,
+                    nombre: 'Nina',
+                    email: 'nina@gmail.com',
+                    foto: '/images/users/default-image.png',
+                    dni: '43321297',
+                    fecha_de_nacimiento: '2000-01-01',
+                    fecha_de_carga: '07-04-2023'
+                }
+            }
         ]
     },
     {
@@ -136,6 +162,20 @@ const camisetas_de_futbol = [
             fecha_de_carga: '07-04-2023'
         },
         comentarios: [
+            {
+                id: 9,
+                texto: 'Vamos Messi! Me encanta la camsieta del PSG',
+                fecha_de_carga: '07-04-2023',
+                usuario: {
+                    id: 1,
+                    nombre: 'Nina',
+                    email: 'nina@gmail.com',
+                    foto: '/images/users/default-image.png',
+                    dni: '43321297',
+                    fecha_de_nacimiento: '2000-01-01',
+                    fecha_de_carga: '07-04-2023'
+                }
+            }
 
         ]
     },
@@ -156,7 +196,20 @@ const camisetas_de_futbol = [
             fecha_de_carga: '07-04-2023'
         },
         comentarios: [
-
+            {
+                id: 9,
+                texto: 'Vamos Enzo! Me encanta la camsieta del Chelsea',
+                fecha_de_carga: '07-04-2023',
+                usuario: {
+                    id: 1,
+                    nombre: 'Nina',
+                    email: 'nina@gmail.com',
+                    foto: '/images/users/default-image.png',
+                    dni: '43321297',
+                    fecha_de_nacimiento: '2000-01-01',
+                    fecha_de_carga: '07-04-2023'
+                }
+            }
         ]
     },
     {
@@ -176,7 +229,20 @@ const camisetas_de_futbol = [
             fecha_de_carga: '07-04-2023'
         },
         comentarios: [
-
+            {
+                id: 9,
+                texto: 'Vamos Fideo Di Maria!',
+                fecha_de_carga: '07-04-2023',
+                usuario: {
+                    id: 1,
+                    nombre: 'Nina',
+                    email: 'nina@gmail.com',
+                    foto: '/images/users/default-image.png',
+                    dni: '43321297',
+                    fecha_de_nacimiento: '2000-01-01',
+                    fecha_de_carga: '07-04-2023'
+                }
+            }
         ]
     },
     {
@@ -222,7 +288,7 @@ const camisetas_de_futbol = [
             id: 1,
             nombre: 'Nina',
             email: 'nina@gmail.com',
-            foto: '/images/users/default-image.png',
+            foto: '/images/users/nina.png',
             dni: '43321297',
             fecha_de_nacimiento: '2000-01-01',
             contrasenia: '123456',

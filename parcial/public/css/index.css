@@ -1,5 +1,8 @@
 /*====== Fonts ======*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
 
 
 /*====== Variables ======*/
@@ -10,7 +13,7 @@
   --gray: #666666;
   --light-gray: #ebebeb;
   --green: #39b54a;
-  --base-font-family: 'Roboto', sans-serif
+  --base-font-family: 'Montserrat', sans-serif
 }
 
 
@@ -171,6 +174,8 @@ hr {
   font-size: 2.4em;
   font-weight: 400;
   color: var(--gray);
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #03264C;
 }
 
 .product-box {
@@ -474,6 +479,21 @@ textarea.form-input {
   border-radius: 4px;
   color: #fff;
 }
+.registro{
+  height: 25px;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 0 15px;
+}
+.etiqueta{
+  margin-left: 400px;
+  font-size: 25px;
+}
+.botonRegistro{
+  margin-left: 500px;
+  padding: 10px;
+  color: #1259c3;
+}
 
 
 /*====== Media-Queries ======*/
@@ -526,4 +546,5 @@ textarea.form-input {
     width: 95%;
     margin: auto;
   }
+
 }
