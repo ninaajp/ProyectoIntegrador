@@ -182,7 +182,7 @@ const camisetas_de_futbol = [
     {
         id: 8,
         nombre: 'Camiseta de Sevilla',
-        imagen: '/images/products/camisetaSevilla.png',
+        imagen: '/images/products/camisetaSevilla.jpg',
         descripcion: 'Camiseta de Sevilla para adulto talle L',
         fecha_de_carga: '07-04-2023',
         vendedor: {
@@ -215,7 +215,7 @@ const camisetas_de_futbol = [
     {
         id: 9,
         nombre: 'Camiseta de Portugal',
-        imagen: '/images/products/camisetaPotugal.png',
+        imagen: '/images/products/camisetaPortugal.jpg',
         descripcion: 'Camiseta de Portugal para adulto talle L',
         fecha_de_carga: '07-04-2023',
         vendedor: {
