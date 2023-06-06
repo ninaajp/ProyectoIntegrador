@@ -1,6 +1,6 @@
-CREATE SCHEMA aplicacion;
+CREATE SCHEMA kitStore;
 
-USE aplicacion;
+USE kitStore;
 
 CREATE TABLE usuarios(
     id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
