@@ -28,6 +28,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         updatedAt : {
             type: dataTypes.DATE
+        },
+        deletedAt : {
+            type: dataTypes.DATE
         }
     };
 
@@ -42,7 +45,7 @@ module.exports = (sequelize, dataTypes) => {
     Producto.associate = (models) => {
         Producto.belongsTo(models.Usuario, {
             as : 'producto_usuario',
-            foreignKey : ''
+            foreignKey : 'FkUserId'
         })
 
         Producto.hasMany(models.Comentario, {

@@ -22,6 +22,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         updatedAt : {
             type: dataTypes.DATE
+        },
+        deletedAt : {
+            type: dataTypes.DATE
         }
     };
 

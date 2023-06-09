@@ -11,6 +11,9 @@ module.exports = (sequelize, dataTypes) => {
         email : {
             type: dataTypes.STRING
         }, 
+        usuario : {
+            type: dataTypes.STRING
+        },
         contrasenia : {
             type: dataTypes.STRING
         }, 
@@ -27,6 +30,9 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.DATE
         },
         updatedAt : {
+            type: dataTypes.DATE
+        },
+        deletedAt : {
             type: dataTypes.DATE
         }
     };

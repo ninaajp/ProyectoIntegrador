@@ -1,17 +1,29 @@
-const camisetas_de_futbol = require('../data/camisetas_de_futbol')
-
+// const camisetas_de_futbol = require('../data/camisetas_de_futbol')
+const db = require('../database/models');
+const Productos = db.Producto;
 
 const productosController = {
   product: function (req, res) {
     let id = req.params.id;
-    let producto = {};
-    for (let i = 0; i < camisetas_de_futbol.length; i++) {
-      if (camisetas_de_futbol[i].id == id) {
-        producto = camisetas_de_futbol[i];
+    
+    Productos.findByPk(id, {
+      include: [
+        { association: 'producto_usuario' },
+        { association: 'producto_comentario', include: ['comentario_usuario']}
+      ]
+    })
+    .then(function (producto) {
+      if (producto) {
+        // res.send(producto)
+        res.render('product', {producto: producto});
+      } else {
+        res.send('No se encontró el producto');
       }
-    }
+    })
+    .catch(function (error) {
+      res.send(error)
+    })
 
-    res.render('product', {producto: producto});
   },
   productAdd: function (req, res) {
     res.render('productAdd');

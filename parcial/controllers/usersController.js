@@ -1,4 +1,6 @@
-const camisetas_de_futbol = require('../data/camisetas_de_futbol')
+// const camisetas_de_futbol = require('../data/camisetas_de_futbol')
+const db = require('../database/models');
+const Usuarios = db.Usuario;
 
 const usersController = {
   login: function (req, res) {
@@ -10,30 +12,25 @@ const usersController = {
   profile: function (req, res) {
     let id = req.params.id;
     
-    let usuario = {}
-    for (let i = 0; i < camisetas_de_futbol.length; i++) {
-      if (camisetas_de_futbol[i].vendedor.id == id) {
-        usuario = camisetas_de_futbol[i].vendedor;
+    Usuarios.findByPk(id, {
+      include: [
+        {
+          association: 'usuario_producto',
+          include: {
+            association: 'producto_comentario',
+            include: ['comentario_usuario']
+          }
+        },
+      ]
+    })
+    .then(function (usuario) {
+      if (usuario) {
+        // res.send(usuario)
+        res.render('profile', {usuario : usuario});
+      } else {
+        res.send("No se encontró el usuario")
       }
-    }
-    
-    usuario.productos = [];
-
-    for (let i = 0; i < camisetas_de_futbol.length; i++) {
-      let prodcuto = {}
-      if (camisetas_de_futbol[i].vendedor.id == id) {
-        prodcuto.id = camisetas_de_futbol[i].id;
-        prodcuto.nombre = camisetas_de_futbol[i].nombre;
-        prodcuto.imagen = camisetas_de_futbol[i].imagen;
-        prodcuto.descripcion = camisetas_de_futbol[i].descripcion;
-        prodcuto.fecha_de_carga = camisetas_de_futbol[i].fecha_de_carga;
-        prodcuto.comentarios = camisetas_de_futbol[i].comentarios;
-        usuario.productos.push(prodcuto);
-      }
-    }
-
-    // res.send(usuario)
-    res.render('profile', {usuario : usuario});
+    })
   },
   profileEdit: function (req, res) {
     res.render('profileEdit');

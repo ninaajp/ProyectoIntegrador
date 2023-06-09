@@ -19,7 +19,6 @@ CREATE TABLE productos(
     id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(255) NOT NULL,
     imagen VARCHAR(255) NOT NULL UNIQUE,
-    fechacarga DATE NOT NULL, 
     descripcion VARCHAR(255) NOT NULL,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -50,23 +49,20 @@ VALUES (DEFAULT, 'nina@gmail.com', 'Nina', '1234', '/images/users/default-image.
 (DEFAULT, 'sofia@gmail.com', 'Sofia', '1237', '/images/users/default-image.png', '2003-11-30', 50000001),
 (DEFAULT, 'luis@gmail.com', 'Luis', '1238', '/images/users/default-image.png', '1999-03-14', 30000001);
 
-/* INSERT INTO usuarios (email, usuario, foto, password, nacimiento, dni)
-VALUES ('Nina', 'nina@gmail.com', '/images/users/default-image.png', '1234', '2000-01-01', 43321297); */
-
-INSERT INTO productos (id, nombre,imagen,fechacarga,descripcion,FkUserId)
-VALUES (DEFAULT, 'Camiseta Argentina','/images/products/camisetaArg.png', '2023-03-11', 'Camiseta de Argentina para adulto talle L', 6),
-(DEFAULT, 'Camiseta de Racing', '/images/products/camisetaRacing.jpeg', '2023-03-11', 'Camiseta de Racing para adulto talle L', 7),
-(DEFAULT, 'Camiseta de Atletico', '/images/products/camisetaAtletico.jpeg','2023-03-11',  'Camiseta de Arleti para adulto talle L', 8),
-(DEFAULT, 'Camiseta de Barcelona', '/images/products/camisetaBarca.jpeg', '2023-03-11', 'Camiseta de Barca para adulto talle L', 10), 
-(DEFAULT, 'Camiseta de Real', '/images/products/camisetaReal.jpeg', '2023-03-11', 'Camiseta de Real para adulto talle L', 9), 
-(DEFAULT, 'Camiseta de SLO', '/images/products/camisetaSlo.jpeg', '2023-03-11', 'Camiseta de San Lorenzo para adulto talle L', 8), 
-(DEFAULT, 'Camiseta de Ferro', '/images/products/camisetaFerro.jpeg', '2023-03-11', 'Camiseta de Ferro para adulto talle L', 7), 
-(DEFAULT, 'Camiseta de Chelsea', '/images/products/camisetaChelsea.jpeg', '2023-03-11', 'Camiseta de Chelsea para adulto talle L', 6), 
-(DEFAULT, 'Camiseta de Burnley', '/images/products/camisetaBurnley.jpeg', '2023-03-11', 'Camiseta de Burnley para adulto talle L', 10), 
-(DEFAULT, 'Camiseta de Inter', '/images/products/camisetaInter.jpeg', '2023-03-11', 'Camiseta de Inter para adulto talle L', 9);
+INSERT INTO productos (id, nombre,imagen,descripcion,FkUserId)
+VALUES (DEFAULT, 'Camiseta Argentina','/images/products/camisetaArg.png', 'Camiseta de Argentina para adulto talle L', 1),
+(DEFAULT, 'Camiseta de Racing', '/images/products/camisetaRacing.jpeg', 'Camiseta de Racing para adulto talle L', 1),
+(DEFAULT, 'Camiseta de Atletico', '/images/products/camisetaAtletico.jpeg',  'Camiseta de Arleti para adulto talle L', 2),
+(DEFAULT, 'Camiseta de Barcelona', '/images/products/camisetaBarca.jpeg', 'Camiseta de Barca para adulto talle L', 3), 
+(DEFAULT, 'Camiseta de Real', '/images/products/camisetaReal.jpeg', 'Camiseta de Real para adulto talle L', 1), 
+(DEFAULT, 'Camiseta de SLO', '/images/products/camisetaSlo.jpeg', 'Camiseta de San Lorenzo para adulto talle L', 2), 
+(DEFAULT, 'Camiseta de Ferro', '/images/products/camisetaFerro.jpeg', 'Camiseta de Ferro para adulto talle L', 4), 
+(DEFAULT, 'Camiseta de Chelsea', '/images/products/camisetaChelsea.jpeg', 'Camiseta de Chelsea para adulto talle L', 5), 
+(DEFAULT, 'Camiseta de Burnley', '/images/products/camisetaBurnley.jpeg', 'Camiseta de Burnley para adulto talle L', 3), 
+(DEFAULT, 'Camiseta de Inter', '/images/products/camisetaInter.jpeg', 'Camiseta de Inter para adulto talle L', 2);
 
 INSERT INTO comentarios (id, texto,FkUserId,FkProductosId)
-VALUES (DEFAULT, 'Muy buena calidad', 6, 1),
-(DEFAULT, 'Excelente camiseta', 7, 2),
-(DEFAULT, 'Buena casaca', 8, 4), 
-(DEFAULT, 'que linda', 9, 5);
+VALUES (DEFAULT, 'Muy buena calidad', 2, 1),
+(DEFAULT, 'Excelente camiseta', 5, 2),
+(DEFAULT, 'Buena casaca', 3, 4),
+(DEFAULT, 'que linda', 4, 1);
