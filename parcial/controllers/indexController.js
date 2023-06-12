@@ -17,6 +17,7 @@ const indexController = {
       ]
     })
       .then(function (productos) {
+        res.send (productos)
         res.render('index', { camisetas_de_futbol: productos });
       })
       .catch(function (error) {
