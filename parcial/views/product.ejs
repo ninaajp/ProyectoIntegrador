@@ -4,7 +4,11 @@
 <%- include('./partials/head') %>
 
 <body>
-	<%- include('./partials/headerLogueado') %>
+	<% if (locals.user) { %>
+		<%- include('./partials/headerLogueado') %>
+	<% } else { %>
+		<%- include('./partials/header') %>
+	<% } %>
 	<!-- product detail -->
 	<div class="container products-wrapper">
 		<div class="d-flex align-items-center">
@@ -21,18 +25,22 @@
 				</article>
 				<div class="col-12 col-lg-4">
 					<section class="comments">
-						<% for(let i = 0; i < producto.producto_comentario.length; i++) { %>
-							<article>
-								<img src="/images/users/nina.png" alt="">
-								<div class="data">
-									<p class="user">
-									<strong> <a href="/users/profile/<%= producto.producto_comentario[i].comentario_usuario.id %>"><%= producto.producto_comentario[i].comentario_usuario.usuario %></a>: </strong><%= producto.producto_comentario[i].texto %></p>
-								</div>
-							</article>
+						<% if (producto.producto_comentario.length === 0) { %>
+							<p class="product-detail-description">No hay comentarios</p>
+						<% } else { %>
+							<% for(let i = 0; i < producto.producto_comentario.length; i++) { %>
+								<article>
+									<img src="/images/users/<%= producto.producto_comentario[i].comentario_usuario.foto %>" alt="">
+									<div class="data">
+										<p class="user">
+										<strong> <a href="/users/profile/<%= producto.producto_comentario[i].comentario_usuario.id %>"><%= producto.producto_comentario[i].comentario_usuario.usuario %></a>: </strong><%= producto.producto_comentario[i].texto %></p>
+									</div>
+								</article>
+							<% } %>
 						<% } %>
 					</section>
-					<form class="form" action="" method="POST">
-						<input class="form-input" type="text" value="" placeholder="Agregar comentario">
+					<form class="form" method="POST" action="/productos/comentar/<%= producto.id %>">
+						<input class="form-input" type="text" value="" name="comentario" placeholder="Agregar comentario">
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
 					</form>
 					<hr>

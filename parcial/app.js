@@ -3,11 +3,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productosRouter = require('./routes/productos');
-
 
 var app = express();
 
@@ -20,6 +20,21 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret : 'mi palabra secreta',
+  saveUninitialized : true,
+  resave : false
+}))
+
+// Middleware
+app.use(function(req, res, next){
+  if(req.session.user != undefined){
+    res.locals.user = req.session.user
+    return next();
+  }
+  return next();
+})
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

@@ -1,57 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
 
 <%- include('./partials/head') %>
 
-<body>
-	<%- include('./partials/header') %>
+	<body>
+		<%- include('./partials/header') %>
 
-	<!-- Novedades -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Registrate</h2>
-			</div>
-			<!-- Show the "ultimos" products -->
-			<h2 class="col-12"> 
-				<form action="/" method="GET">
-					<div>
-						<label class= "etiqueta" for="email"> Email </label>
-						<input class= "registro" type="email" name="email" placeholder="ingrese su email">
+			<!-- Novedades -->
+			<div class="container products-wrapper">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="products-title">Registrate</h2>
 					</div>
-<% //en la base de datos no hay uno que diga usuario pero en la consigna del punto 1 si, preguntar si va o no %>
-					<div>
-						<label class= "etiqueta" for="usuario"> Usuario </label>
-						<input class= "registro" type="text" name="usuario" placeholder="inserte su usuario">
-					</div>
-					<div>
-						<label class= "etiqueta" for="contraseña"> Contraseña </label>
-						<input class= "registro" type="contraseña" name="contraseña">
-					</div>
-					<div>
-						<label class= "etiqueta" for="fecha de nacimiento"> Fecha de nacimiento </label>
-						<input class= "registro" type="date" name="fecha de nacimiento" placeholder="ingrese su fecha de nacimiento">
-					</div>
-					<div>
-						<label class= "etiqueta" for="dni"> DNI </label>
-						<input class= "registro" type="number" name="dni" placeholder="ingrese su dni">
-					</div>
-					<div>
-						<label class= "etiqueta" for="foto"> Foto de perfil </label>
-						<input class= "registro" type="text" name="foto" placeholder="inserte su foto">
-					</div>
-					<br>
-					<button class= "botonRegistro" type="submit"> Registrate </button>
-					
-
-				</form>
-			</h2>
+					<!-- Show the "ultimos" products -->
+					<h2 class="col-12">
+						<form method="POST">
+							<div>
+								<label class="etiqueta" for="email"> Email </label>
+								<input class="registro" type="email" name="email" placeholder="ingrese su email">
+							</div>
+							<!-- en la base de datos no hay uno que diga usuario pero en la consigna del punto 1 si, preguntar si va o no -->
+							<div>
+								<label class="etiqueta" for="usuario"> Usuario </label>
+								<input class="registro" type="text" name="usuario" placeholder="inserte su usuario">
+							</div>
+							<div>
+								<label class="etiqueta" for="contraseña"> Contraseña </label>
+								<input class="registro" type="contraseña" name="contrasenia">
+							</div>
+							<div>
+								<label class="etiqueta" for="fecha de nacimiento"> Fecha de nacimiento </label>
+								<input class="registro" type="date" name="fecha_de_nacimiento"
+									placeholder="ingrese su fecha de nacimiento">
+							</div>
+							<div>
+								<label class="etiqueta" for="dni"> DNI </label>
+								<input class="registro" type="number" name="dni" placeholder="ingrese su dni">
+							</div>
+							<div>
+								<label class="etiqueta" for="foto"> Foto de perfil </label>
+								<input class="registro" type="file" name="foto" placeholder="inserte su foto">
+							</div>
+							<br>
+							<button class="botonRegistro" type="submit"> Registrate </button>
 
 
-	<%- include('./partials/footer') %>
-</body>
+						</form>
+					</h2>
+
+
+					<%- include('./partials/footer') %>
+	</body>
 
 </html>
 

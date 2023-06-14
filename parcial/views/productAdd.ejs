@@ -15,10 +15,10 @@
 			</div>
 			<!-- Show the "ultimos" products -->
 			<h2 class="col-12"> 
-				<form action="/users/login" method="GET">
+				<form method="POST">
 					<div>
 						<label  class= "etiqueta" for="imagen"> Imagen </label>
-						<input class= "registro" type="file" name="imagen" placeholder="imagen">
+						<input class="registro" type="file" name="imagen" placeholder="imagen">
 					</div>
 					<div>
 						<label class= "etiqueta" for="nombre"> Nombre del producto </label>
@@ -28,11 +28,7 @@
 						<label class= "etiqueta" for="descripcion"> Descripcion </label>
 						<input  class= "registro" type="text" name="descripcion" placeholder="descripcion del producto">
 					</div>
-					<label class= "etiqueta" for="fecha"> Fecha de carga </label>
-						<input class= "registro" type="date" name="fecha" placeholder="fecha de carga">
-					
 					<button  class= "botonRegistro" type="submit"> Agregar productos </button>
-				
 				</form>
 			</h2>
 

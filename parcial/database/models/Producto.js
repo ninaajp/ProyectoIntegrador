@@ -14,9 +14,6 @@ module.exports = (sequelize, dataTypes) => {
         imagen : {
             type: dataTypes.STRING
         },
-        fechacarga: {
-            type: dataTypes.DATE
-        },
         descripcion: {
             type: dataTypes.STRING
         },
