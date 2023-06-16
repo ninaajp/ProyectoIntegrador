@@ -2,6 +2,7 @@
 const db = require('../database/models');
 const Productos = db.Producto;
 const Comentarios = db.Comentario;
+const Usuario= db.Usuario;
 
 const productosController = {
   product: function (req, res) {
@@ -78,7 +79,38 @@ const productosController = {
       .catch(function(error) {
         res.send(error)
       })
-  }
+  },
+  eliminarProduct: function(req,res){
+    let productoid = req.params.id;
+
+    Usuario.findByPk(req.session.user.id)
+            .then(function (user) {
+                if (user) {
+                    if (user.id == req.session.user.id) {
+                        Productos.destroy({
+                            where: {
+                                id: productoid
+                            },
+                            
+                        })
+                            .then(function () {
+                                res.redirect("/users/profile/"  + req.session.user.id)
+                            })
+                            .catch(function (error) {
+                                res.send(error)
+                            })
+                    } else {
+                        res.send("No puede eliminar este producto ya que no le pertenece")
+                    }
+                } else {
+                    res.send("No se encuentra el usuario")
+                }
+            })
+            .catch(function (error) {
+                res.send(error)
+            });
+  },
+
 };
 
 module.exports = productosController;

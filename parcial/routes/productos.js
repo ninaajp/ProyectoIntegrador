@@ -7,6 +7,7 @@ router.get('/productAdd', productosController.productAdd); // http://localhost:3
 
 router.post('/productAdd', productosController.productAddSave); // http://localhost:3000/productos/productAdd
 router.post('/comentar/:id', productosController.comentar);
+router.post('/eliminar/:id', productosController.eliminarProduct)
 
 router.get('/detalle/:id', productosController.product); // http://localhost:3000/productos/detalle/1
 
